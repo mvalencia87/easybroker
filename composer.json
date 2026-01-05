@@ -1,0 +1,27 @@
+{
+    "name": "easybroker/easybroker-client",
+    "description": "Cliente PHP para consumir la API de EasyBroker",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyBroker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EasyBroker\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit tests/",
+        "test-coverage": "phpunit --coverage-html coverage"
+    }
+}
