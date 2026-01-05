@@ -51,7 +51,7 @@ composer test
 
 ### Estructura del proyecto
 ```
-easybroker-client/
+easybroker/
 │
 ├── src/
 │   ├── Client/
